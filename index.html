@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <div id="success-message" class="success">
+            Thank you for your message! We'll get back to you soon
+        </div>
+        <form id="contact-form" action="/submit">
+            <div>
+                <label for="user">Name:</label>
+                <input type="text" name="user" id="user" placeholder="Full Name *">
+                <span id="name-error" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Email address *">
+                <span id="email-error" class="error"></span>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Message..."></textarea>
+                <span  id="message-error" class="error"></span>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
