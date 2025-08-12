@@ -11,7 +11,7 @@ Build a contact form with client-side validation for name, email, and message fi
   - Empty field detection for all required inputs
   - Email format validation using regex pattern matching
   - Dynamic error message display adjacent to invalid fields
-  - Submission blocking for invalid forms using event.preventDefault()
+  - Used event.preventDefault() to prevent actual form submission.
 
 - **User Experience**:
   - Real-time validation feedback during form interaction
